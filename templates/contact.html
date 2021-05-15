@@ -1,0 +1,52 @@
+{% extends 'Layout.html' %}
+
+{% block content %}
+
+<div class="container mb-5">
+<div class="card">
+    <div class="card-header text-center">
+        <h4><b>Get In Touch</b></h4>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">First Name</label>
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+               
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+                
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="inputTb">Technical Background</label>
+                <textarea class="form-control" rows="5" id="tbComment"></textarea>
+              </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputTb">Expectations from the Training</label>
+                  <textarea class="form-control" rows="5" id="tbComment"></textarea>
+                </div>
+                </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+          </form>
+        
+    </div>
+</div>
+</div>
+  {% endblock %}

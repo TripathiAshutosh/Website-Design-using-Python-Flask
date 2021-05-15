@@ -1,0 +1,26 @@
+{% extends 'Layout.html' %}
+
+{% block content %}
+      
+   
+<div class="card text-center" >
+
+
+
+    <div class="card-body" >
+        <h4 class="card-title">Free Mock Interview Platform</h4>
+        <p class="card-text">Schedule Mock Interviews with Industry Experts.</p>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#interviewModel">Schedule Now</button>
+    </div>
+
+
+</div>
+<div class="container mb-5">
+  {% include "services.html" %}
+</div>
+  
+
+{% include "schedule-interview.html" %}
+
+{% include "ds-trainings.html" %}
+{% endblock %}
