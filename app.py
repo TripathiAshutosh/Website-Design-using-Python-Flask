@@ -30,7 +30,7 @@ def getResponseLinearReg():
     B = request.form["B"]
     LSTAT = request.form["LSTAT"]
     inputList = [CRIM,ZN,INDUS,CHAS,NOX,RM,AGE,DIS,RAD,TAX,PT,B,LSTAT]
-    with open("C:\\Ashutosh\\Data Science Training\Webinars\\Boston House Price\\boston_mlm.pkl", 'rb') as file:
+    with open("/boston_mlm.pkl", 'rb') as file:
             pickle_model = pickle.load(file)
             y_pred_from_pkl = pickle_model.predict([inputList])
     print(y_pred_from_pkl)
